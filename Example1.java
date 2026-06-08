@@ -1,3 +1,4 @@
+import models.Truck;
 
 public class Example1 {
 
@@ -16,6 +17,8 @@ public class Example1 {
 
     public static void main(String[] args) {
         Example1.Cat cat1 = new Example1.Cat("Barsik");
+        // Может обратиться напрямую через Cat без приставки Example1.Cat потому что мы
+        // запускаем программу в этом же классе
         Cat cat2 = new Example1.Cat("Barsik");
         // Cat cat2 = new Cat("Barsik");
 
@@ -23,11 +26,17 @@ public class Example1 {
 
         System.out.println("Имена одинаковые? " + cat1.isEqualTo(cat2));
 
-        Car tesla = new Car("tesla");
+        MyFirstTask.Car tesla = new MyFirstTask.Car("tesla");
         MyFirstTask.Car tesla2 = new MyFirstTask.Car("tesla");
-        // Car tesla2 = new MyFirstTask.Car("tesla");
+        MyFirstTask.Car bmw = new MyFirstTask.Car("bmw");
+
+        System.out.println(tesla.checkModel(bmw));
         // Car audi = new MyFirstTask.Car("tesla");
-        PlainCar audi = new PlainCar("Audi"); // Никаких приставок и точек!
-        System.out.println("Модель новой машины: " + audi.model);
+
+        PlainCar audi = new PlainCar("Audi"); // Никаких приставок и точек, так как класс не вложенный !
+
+        Truck truck = new Truck("Kamaz");
+        System.out.println("Gruzovik " + truck.brand);
+
     }
 }
