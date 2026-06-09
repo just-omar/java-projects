@@ -1,3 +1,5 @@
+package src.core.intro;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

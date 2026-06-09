@@ -1,3 +1,5 @@
+package src.core.intro;
+
 public class MyFirstTask {
 
     static class Car {

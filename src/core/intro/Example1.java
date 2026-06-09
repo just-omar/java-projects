@@ -1,4 +1,4 @@
-import models.Truck;
+package src.core.intro;
 
 public class Example1 {
 
@@ -27,16 +27,10 @@ public class Example1 {
         System.out.println("Имена одинаковые? " + cat1.isEqualTo(cat2));
 
         MyFirstTask.Car tesla = new MyFirstTask.Car("tesla");
-        MyFirstTask.Car tesla2 = new MyFirstTask.Car("tesla");
         MyFirstTask.Car bmw = new MyFirstTask.Car("bmw");
 
         System.out.println(tesla.checkModel(bmw));
         // Car audi = new MyFirstTask.Car("tesla");
-
-        PlainCar audi = new PlainCar("Audi"); // Никаких приставок и точек, так как класс не вложенный !
-
-        Truck truck = new Truck("Kamaz");
-        System.out.println("Gruzovik " + truck.brand);
 
     }
 }

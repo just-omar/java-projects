@@ -1,3 +1,5 @@
+package src.core.intro;
+
 public class StringCompareExample {
     public static void main(String[] args) {
         // Создаем две строки через ключевое слово new (принудительно создаем два разных

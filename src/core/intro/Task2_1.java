@@ -1,3 +1,5 @@
+package src.core.intro;
+
 public class Task2_1 {
 
     public static class User {

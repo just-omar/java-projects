@@ -1,3 +1,5 @@
+package src.core.intro;
+
 public class Main {
 
     public void main() {
